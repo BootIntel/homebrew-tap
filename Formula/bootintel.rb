@@ -7,32 +7,32 @@
 #
 # On every version bump, update `version` and all four sha256 values from the
 # SHA256SUMS artifact of the matching release. The values below are from
-# https://github.com/BootIntel/cli/releases/download/cli-v0.5.0/SHA256SUMS
+# https://github.com/BootIntel/cli/releases/download/cli-v0.6.0/SHA256SUMS
 class Bootintel < Formula
   desc "Interactive UART capture and streaming boot-log analysis"
   homepage "https://bootintel.com"
-  version "0.5.0"
+  version "0.6.0"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
       url "https://github.com/BootIntel/cli/releases/download/cli-v#{version}/bootintel-v#{version}-aarch64-macos.tar.gz"
-      sha256 "3863ee56f86b43a1fd4f131d9e484713ebcb1550bece5ad7c2ee4de2c3ca77ce"
+      sha256 "3bb2ba19032a930e5dbfe7af1f6ca98a51ea95b303734e0797e7b5616bd9f56a"
     end
     on_intel do
       url "https://github.com/BootIntel/cli/releases/download/cli-v#{version}/bootintel-v#{version}-x86_64-macos.tar.gz"
-      sha256 "55cfe10f276b47e8843a670ba349c0add1f091e842a190fdd07229b646425c44"
+      sha256 "86727e8fb4db983be912275a4cb9e0cdaa1bc34c463ba85129142f5dba0ce943"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/BootIntel/cli/releases/download/cli-v#{version}/bootintel-v#{version}-aarch64-linux.tar.gz"
-      sha256 "0f91ffde24100bc8456aef39bda9493ba677d81b1589b2d59833be10d62ea4be"
+      sha256 "e476c79752ea33468abc4f99baacb780eb4a460d4a52a8a3675e1f288e5d5629"
     end
     on_intel do
       url "https://github.com/BootIntel/cli/releases/download/cli-v#{version}/bootintel-v#{version}-x86_64-linux.tar.gz"
-      sha256 "1a2dc10499c8db658a698d45e47789b964843d806a0b5f7f51e439c1e05586ed"
+      sha256 "c9b7beffd52149821cf2176670197bb055bd1ddebc553ac60e1474abcaaed1b9"
     end
   end
 
